@@ -35,13 +35,13 @@ header{
     padding-right: 10px;
 }
 
-.header-right select, #play-btn {
-    width: 100px;
-    margin-left: 10px;
+.header-right select{
+    margin:0 5px ;
+    width: 150px;
 }
 
 #play-btn{
-
+    width: 70px;
 }
 
 
@@ -58,7 +58,37 @@ main.wrapper{
 .container-grid{
     height: 500px;
     width: 500px;
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.easy, .medium, .hard{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+.easy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.hard{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.clicked{
+    background-color: cornflowerblue;
 }
 
 /* footer */
